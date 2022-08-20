@@ -1,0 +1,3 @@
+LIBRARY olympusix.mexw64
+EXPORTS mexFunction
+EXPORTS mexfilerequiredapiversion 

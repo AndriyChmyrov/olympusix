@@ -1,0 +1,54 @@
+olympusix('U?');
+Get Available Unit U?
+
+olympusix('GOB 1');
+Get Available Objective Lens GOB
+
+olympusix('GMU2 1');
+Get mirror 1 name on Deck 2
+
+olympusix('WS?');
+Window status
+
+olympusix('N 1');
+all other notifications on 
+
+olympusix('SK 1');
+host key notification on
+
+olympusix('NOB 1');
+objective lens change notification
+
+olympusix('OBSEQ 3');
+Change the objective lens position to 3rd hole
+
+olympusix('SKD 151,1');
+Set display status OB1 Normal
+
+olympusix('SKD 354,1');
+Set z-position Escape button to 'Unpressed' state
+
+olympusix('SKD 354,2');
+Set z-position Escape button to 'Pressed' state
+
+olympusix('FM F,30');
+Relative movement of Z to -0.30[um]
+
+olympusix('FG 5000');
+Absolute movement of Z to 5000
+
+olympusix('BIL 1');
+Set light path to camera
+
+olympusix('BIL 2');
+Set light path to 50/50 port
+
+olympusix('BIL 3');
+Set light path to eye piece
+
+olympusix('IXIL 1');
+Switch on(1) or off(0) lights on microscope frame
+
+olympusix('TPIL 1');
+Switch on(1) or off(0) lights on TPC unit
+
