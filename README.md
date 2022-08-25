@@ -12,9 +12,9 @@ Contact me for additional details, if needed.
 
 **Syntaxis:**
 ~~~Matlab
-olmypusix('Olympus SDK command')            % send Olympus SDK command to the microscope frame (I3-TPC unit)
-olmypusix('setParameterCommand',value); 	% set Parameter to provided value or execute command
-result = olmypusix('getParameterCommand');	% get Parameter value or get command output
+olmypusix('Olympus SDK command')           % send Olympus SDK command to the touch panel (I3-TPC unit)
+olmypusix('setParameterCommand',value);    % set Parameter to provided value or execute command
+result = olmypusix('getParameterCommand'); % get Parameter value or get command output
 ~~~
 
 | Parameters/Commands:	| Call type |
