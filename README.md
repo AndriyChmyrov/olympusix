@@ -6,7 +6,7 @@ which has to be obtained from an Olympus representative
 
 Olympus SDK commands and operation principles are described in files IX3-BSW Application Note_E.pdf, IX3TPCif_E.pdf, IS3_cmd_v6_E.pdf, which are available from Olympus.
 
-Overall, control of an Olympus IX83 microscope frame through SDK or even this Matlab MEX wrapper is not an easiest thing, but it is doable.
+Overall, the control of an Olympus IX83 microscope frame through SDK or even this Matlab MEX wrapper is not an easiest thing, but it is doable.
 Contact me for additional details, if needed.
 
 Syntaxis:
