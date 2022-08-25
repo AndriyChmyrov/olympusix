@@ -141,14 +141,3 @@ private:
 extern __int32 olympusIX, olympusIXs;		// Microscopes
 extern HANDLE	ixObj;
 extern HMODULE	hMod;
-
-
-int	CALLBACK CommandCallback(ULONG MsgId, ULONG	wParam, ULONG lParam, PVOID	pv, PVOID pContext, PVOID pCaller);
-int	CALLBACK NotifyCallback(ULONG MsgId, ULONG	wParam, ULONG lParam, PVOID	pv, PVOID pContext, PVOID pCaller);
-//int	CALLBACK _NotifyCallback(ULONG MsgId, ULONG	wParam, ULONG lParam, PVOID	pv, PVOID pContext, PVOID pCaller);
-//int	CALLBACK _CommandCallback(ULONG MsgId, ULONG	wParam, ULONG lParam, PVOID	pv, PVOID pContext, PVOID pCaller);
-int	CALLBACK _ErrorCallback(ULONG MsgId, ULONG	wParam, ULONG lParam, PVOID	pv, PVOID pContext, PVOID pCaller);
-
-
-// mxArray* getParameter(ixState* ixStates, const char* name);
-// void setParameter(ixState* ixStates, const char* name, const mxArray* field);

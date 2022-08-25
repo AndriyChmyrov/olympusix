@@ -116,7 +116,7 @@ void mexMessage(unsigned error)
 }
 
 
-int	CALLBACK _ErrorCallback(ULONG MsgId, ULONG	wParam, ULONG lParam, PVOID	pv, PVOID pContext, PVOID pCaller)
+int	CALLBACK ErrorCallback(ULONG MsgId, ULONG	wParam, ULONG lParam, PVOID	pv, PVOID pContext, PVOID pCaller)
 {
 	UNREFERENCED_PARAMETER(pCaller);
 	UNREFERENCED_PARAMETER(pContext);

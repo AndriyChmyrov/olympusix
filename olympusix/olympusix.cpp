@@ -507,7 +507,7 @@ bool ixState::open(void)
 #endif
 	}
 
-	bRes = (*pfn_RegisterCallback)(ifData, CommandCallback, NotifyCallback, _ErrorCallback, this);
+	bRes = (*pfn_RegisterCallback)(ifData, CommandCallback, NotifyCallback, ErrorCallback, this);
 	if (!bRes)
 	{
 		mexErrMsgTxt("Could not register Callback function!");
