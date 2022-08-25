@@ -88,5 +88,5 @@ olympusix('lightpath')             % get current lightpath mode
 
 olympusix('L 0,0');                % Olympus SDK command - logout from microscope frame
 olympusix('close');                % close connection to the IX83 frame
-clear olympusix                    % clear Olympus mex driver from memory
+clear olympusix                    % clear Olympus MEX driver from memory
 ~~~
