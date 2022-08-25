@@ -2,14 +2,15 @@
 Matlab MEX wrapper written in C/C++ (MS Visual Studio) for Olympus IX-series motorized microscope frame (tested on Olympus IX83)
 
 Requires Olympus SDK (PortManager software with fsi1394.dll, gt_log.dll, msl_pd_1394.dll, msl_pm.dll and gtlib.config), 
-which has to be obtained from an Olympus representative
+which has to be obtained from an Olympus representative.
+Olympus FireWire card and microscope drivers have to be successfully installed and be visible in the Device Manager. See file olympusix_device_manager.jpg
 
 Olympus SDK commands and operation principles are described in files IX3-BSW Application Note_E.pdf, IX3TPCif_E.pdf, IS3_cmd_v6_E.pdf, which are available from Olympus.
 
 Overall, the control of an Olympus IX83 microscope frame through SDK or even this Matlab MEX wrapper is not an easiest thing, but it is doable.
 Contact me for additional details, if needed.
 
-Syntaxis:
+**Syntaxis:**
 ~~~Matlab
 olmypusix('Olympus SDK command')            % send Olympus SDK command to the microscope frame (I3-TPC unit)
 olmypusix('setParameterCommand',value); 	% set Parameter to provided value or execute command
@@ -74,7 +75,7 @@ olympusix('observationmethods','FL,BF');
 olympusix('omparameters',{'1,0,N,N,N,N,N,1,N,N,8,N,N,N,N,N,N,N','1,0,N,N,N,N,N,3,N,N,1,N,N,N,N,N,N,N'});
 
 olympusix('focusposition')         % get focus Z position in Olympus units. Multiply that value by 1e-8 to convert to meters
-olympusix('focusposition',zpos/1e-8); % set focus Z position. The parameter zpos is in meters
+olympusix('focusposition',zpos/1e-8); % set focus Z position. The units of the parameter zpos are meters
 olympusix('frame_lights',0);       % switch off lights on the IX83 frame
 olympusix('panel_lights',0);       % switch off lights on the I3-TPC touch panel
 
